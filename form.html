@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+    background-image: url('https://i.pinimg.com/originals/1b/8e/62/1b8e628911c42bb354ff8c60e2cd2f97.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    border-width: thick;
+    background-image: -moz-repeating-linear-gradient();
+    box-sizing: border-box;  
+    text-align: center;
+background-size: cover;
+}
+.heading
+
+{
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 45px;
+    text-align: start;
+}
+.intro{
+    
+    text-size-adjust: 60px;
+    text-align: left;
+    font-size: 30px;
+    color: rgba(14, 13, 13, 0.973);
+}
+
+#name{
+    text-indent: inherit;
+}
+*{
+       box-sizing: border-box;
+       border-width: medium;
+}
+form{
+background-color: brown;
+    text-align: left;
+    text-shadow: 0ex;
+    font-weight: 400;
+    border: 2px solid rgb(15, 13, 13);
+    width: 350px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: sans-serif;
+}ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+#name,#role,#email,#date,#bonus,#eligibility,#gender,#about{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.home) {
+  background-color: #111;
+}
+
+.home{
+  background-color: #04AA6D;
+}
+
+</style>
+</head>
+<body>
+    <ul>
+     <li><a class="home"  href="hom.html">Home</a></li>
+     <li><a href="news.html">News</a></li>
+     <li><a href="contact.html">Contact</a></li>
+     <li><a href="about.html">About</a></li>
+   </ul>
+    <div class="heading"><h2>Welcome to <b>World Travel</b> Tourism</h2></div>
+    <div class="intro">Plesase fill the following details:</div>
+    <form action="backend.php">
+        <div>
+    <p id="name">
+      Name:<input type="text" id="name">
+     </p>
+     </div>
+     <div>
+         
+         <p id="role"> Place to visit: <input type="text" ></p>
+          </div>
+         <div>
+            <p id="email">
+           Email: <input type="email" name="Myemail">
+            </p>
+            </div>
+             <div>
+                <p id="date">
+                Date of birth: <input type="date" name="myDate" >
+                </p> 
+             </div>
+            <div>
+                <p id="bonus">
+               Bonus: <input type="number" name="myNumber" >
+                </p>
+            </div>
+             <div>
+                <p id="eligibility">
+                Are you impaired?:<input type="checkbox" name="myEligibility"  >
+                </p>
+            </div>
+              <div>
+                 <p id="gender">
+                Gender:Male<input type="radio" name="myGender" >
+               Female <input type="radio" name="myGender" >
+               Other <input type="radio" name="myGender" >
+                </p>
+            </div>
+             <div>
+                
+               <p id="about"> Write about yourself:  <br><textarea name="myName" cols="40" rows="6"></textarea></p>
+            </div>
+             <div>
+                    <p id="submit"><input type="submit" value="Submit Now" > <input type="reset" value="Reset"></p>
